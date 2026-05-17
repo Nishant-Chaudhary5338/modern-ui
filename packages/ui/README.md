@@ -1,16 +1,15 @@
 # @repo/ui
 
-Production-grade React component library for internal engineering teams. Built on Radix UI + Tailwind CSS v4 with full TypeScript support.
+43 accessible, typed, and tree-shakeable React components. Built on Radix UI + Tailwind CSS v4.
 
-## Quick Start
+## Quick start
 
-```bash
-# Already in the monorepo — no install needed
-# Import CSS once in your app entry (e.g. layout.tsx / main.tsx)
-import "@repo/ui/styles.css"
+```tsx
+// import CSS once at app root
+import '@repo/ui/styles.css'
 
-# Then import components
-import { Button, DataTable, AutoForm } from "@repo/ui"
+// import components
+import { Button, DataTable, AutoForm } from '@repo/ui'
 ```
 
 ## Component Count
@@ -31,28 +30,22 @@ import { Button, DataTable, AutoForm } from "@repo/ui"
 ## Storybook
 
 ```bash
-pnpm --filter @repo/ui storybook
+pnpm storybook
 # Opens at http://localhost:6006
 ```
 
 ## Tests
 
 ```bash
-pnpm --filter @repo/ui test          # single run
-pnpm --filter @repo/ui test:watch    # watch mode
+pnpm test          # single run
+pnpm test:watch    # watch mode
 ```
 
 ## Build
 
 ```bash
-pnpm --filter @repo/ui build
+pnpm build
 # Outputs ESM + CJS + .d.ts declarations to dist/
-```
-
-## Generate a New Component
-
-```bash
-pnpm --filter @repo/ui component:generate --name=MyComponent
 ```
 
 ## Key Features
@@ -65,5 +58,4 @@ pnpm --filter @repo/ui component:generate --name=MyComponent
 
 ## See Also
 
-- [CLAUDE.md](./CLAUDE.md) — Complete API reference, composition patterns, and agentic usage guide
-- [Storybook stories](./components/) — Interactive examples for every component and feature
+- [Storybook stories](./components/) — Interactive examples for every component and variant
